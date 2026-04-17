@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #11121a;
+  --hover-color: #272832;
+  --accent-color: #0071FF;
+  --text-color: #c9c9c9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, "Segoe UI", sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--primary-color);
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+
+nav {
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--hover-color);
+  color: var(--text-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* LINKS (MATCH MAIN PAGE SIZE) */
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+
+  padding: 1em 2em; /* 🔥 MAIN PAGE STANDARD */
+  transition: background-color 150ms ease;
+}
+
+nav a:hover {
+  background-color: var(--hover-color);
+}
+
+nav a.active-link {
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* Title */
+nav h1 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* HOME LINK (FIXED TO MATCH NAV SIZE) */
+.home-link {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 1em 2em; /* 🔥 MATCH NAV LINKS */
+  background-color: #374151;
+  border-radius: 6px;
+}
+
+.home-link:hover {
+  background-color: #4b5563;
+}
+
+/* ===================== */
+/* CONTROLS */
+/* ===================== */
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 1.5em;
+}
+
+.controls input,
+.controls select {
+  padding: 0.9em 1em;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: #1b1c25;
+}
+
+/* ===================== */
+/* MAIN CONTAINER */
+/* ===================== */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* Game box */
+.games-box {
+  width: 100%;
+  max-width: 800px;
+
+  background-color: #1a1b26; /* slightly above primary */
+  border: 1px solid var(--hover-color);
+  border-radius: 12px;
+
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ===================== */
+/* GAME CARDS */
+/* ===================== */
+.game {
+  background-color: #161722;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+
+  padding: 22px 24px;   /* 🔥 more horizontal + vertical space */
+  margin-bottom: 12px;
+}
+
+.game:hover {
+  background-color: #1d1f2c;
+  transform: translateY(-2px);
+}
+
+.game h3 {
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.game p {
+  margin: 6px 0;
+  line-height: 1.5;
+  color: #c9c9c9;
+}

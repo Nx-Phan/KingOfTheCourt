@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="Calendar.css">
+  <script src="Calendar.js" defer></script>
+</head>
+
+<body>
+
+  <nav id="navbar">
+  <div class="nav-left">
+    <li class="home-li"><a class="active-link" aria-current="page" href="index.html">Home</a></li>
+    <h1>Sand Volleyball Games</h1>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search team..." />
+    <select id="teamFilter">
+      <option value="all">All Teams</option>
+    </select>
+    <select id="sortOrder">
+      <option value="asc">Earliest</option>
+      <option value="desc">Latest</option>
+    </select>
+  </div>
+</nav>
+<div class="main-container">
+    <div class="games-box">
+      <div id="gamesContainer"></div>
+    </div>
+  </div>
+</body>
+</html>
